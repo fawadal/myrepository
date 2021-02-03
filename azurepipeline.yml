@@ -31,17 +31,3 @@ steps:
     FilePath: 'D:\a\1\s\results\html\report.html'
     VariableName: 'html'
     AddNewlines: false
-   
-- task: SendEmail@1
-  inputs:
-    To: 'marko@churlinoski.mk'
-    From: 'azure-devops@churlinoski.mk'
-    Subject: 'Create Customer - Load test'
-    Body: '$(html)'
-    BodyAsHtml: true
-    AddAttachment: false
-    SmtpServer: 'mail.churlinoski.mk'
-    SmtpPort: '25'
-    SmtpUsername: 'azure-devops@churlinoski.mk'
-    SmtpPassword: 'Marko1993.'
-    UseSSL: false
